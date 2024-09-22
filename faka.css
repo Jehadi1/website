@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border-collapse: collapse;
+}
+
+/* fallback */
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v200/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+  }
+  
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+/* mobile -576 */
+/* tab -992 */
+
+body {
+  background-color: #111111;
+  color: #fff;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+.container {
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ========== header css =========== */
+#header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+#header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar a img,
+.footer-box img {
+  width: 100px;
+}
+
+.nav-bar .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid #ffffff1c;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.nav-bar .menu li:first-child {
+  background-color: #e6533c;
+  border-radius: 30px;
+}
+
+.nav-bar .menu li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 8px 26px;
+}
+
+.nav-bar .material-symbols-outlined {
+  display: none;
+}
+
+/* ========= hero css ========= */
+.hero-wrapper {
+  gap: 100px;
+}
+
+.hero-wrapper .col h1 {
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 70px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-wrapper .col h1 span {
+  font-family: "Dancing Script", cursive;
+  font-size: 73px;
+}
+
+.hero-wrapper .col p {
+  color: #aaaaaaab;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.hero-wrapper .col button {
+  background-color: #e6533c;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-wrapper .col button:first-of-type {
+  margin-right: 10px;
+}
+
+.hero-wrapper .col button:last-child {
+  background-color: #111111;
+  border: 1px solid #fff;
+}
+
+.hero-wrapper .col img {
+  min-width: 350px;
+  min-height: 550px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: -20px;
+}
+
+.hero-wrapper .col:last-of-type {
+  position: relative;
+}
+
+.hero-wrapper .col .image-card {
+  position: absolute;
+  width: 174px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  background: rgb(58 61 61 / 30%);
+  border: 1px solid #ffffff1a;
+  border-radius: 7px;
+  right: -65px;
+  top: 22%;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.hero-wrapper .col .image-card h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.hero-wrapper .col .image-card span,
+.image-card2 .image-card2-content p {
+  font-size: 13px;
+  color: #cacaca;
+  margin-top: -4px;
+  display: block;
+}
+
+.hero-wrapper .col .image-card2 {
+  width: 174px;
+  height: 84px;
+  display: flex;
+  background: rgb(58 61 61 / 30%);
+  border: 1px solid #ffffff1a;
+  border-radius: 7px;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: 80px;
+  left: -80px;
+}
+.hero-wrapper .col .image-card2 span {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right: 11px;
+}
+
+.image-card2 .image-card2-content h3 {
+  font-size: 23px;
+  margin-bottom: -5px;
+}
+
+.image-card2-content {
+  margin-top: -7px;
+}
+/* ====== change habit cssss */
+.change-habit-title {
+  text-align: center;
+}
+
+.change-habit-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.change-habit-title p {
+  color: #aaaaaaab;
+  margin-bottom: 45px;
+  display: block;
+}
+
+#change-habit .change-habit-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 30px;
+}
+
+.change-habit-wrapper .change-habit-box {
+  text-align: center;
+}
+
+.change-habit-wrapper .change-habit-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.change-habit-wrapper .change-habit-box b {
+  display: block;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.change-habit-wrapper .change-habit-box p {
+  color: #aaaaaaab;
+  display: block;
+}
+/* ======= run extra mile css ======= */
+#extra-mile .extra-mile-wrapper {
+  background-color: #222222;
+  border-radius: 15px;
+  gap: 75px;
+}
+
+.extra-mile-wrapper .col {
+  padding: 20px;
+}
+
+.extra-mile-wrapper .col h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 40px;
+}
+
+.extra-mile-wrapper .col p,
+.footer-box p {
+  color: #aaaaaaab;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.extra-mile-wrapper .col button {
+  display: block;
+  background-color: #e6533c;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* =========== our team css ========== */
+#our-team .team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  background-color: #222222;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.team-wrapper .team-card {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.team-card .team-content {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+}
+
+.team-wrapper .team-card img {
+  width: 295px;
+  height: 272px;
+  object-fit: cover;
+}
+/* ======== bmi calculator css ======== */
+#bmi-calculator {
+  background-color: #222222;
+}
+
+.bmi-wrapper .col h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.bmi-wrapper .col table tr td,
+th {
+  padding: 10px 15px;
+}
+
+.bmi-wrapper .col {
+  flex-basis: 50%;
+}
+
+.bmi-wrapper .col p {
+  margin-bottom: 20px;
+  line-height: 30px;
+  color: #aaaaaaab;
+}
+
+.bmi-wrapper .col .bmi-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.col .bmi-box span,
+select {
+  background-color: #2c2b2b;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  color: #aaa;
+  font-size: 15px;
+}
+select {
+  margin-bottom: 20px;
+}
+
+.bmi-wrapper .col button {
+  display: block;
+  background-color: #e6533c;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.age {
+  background-color: #2c2b2b;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* ======== footer css ========= */
+footer {
+  padding: 50px 0px;
+}
+.footer-box:first-of-type {
+  flex-basis: 46%;
+}
+.footer-box:nth-last-child(2) {
+  flex-basis: 20%;
+}
+.footer-box:last-of-type {
+  flex-basis: 15%;
+}
+
+.footer-wrapper {
+  gap: 20px;
+}
+
+.footer-box p {
+  text-align: left !important;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #aaa;
+  line-height: 35px;
+}
+
+footer span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #aaa;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #aaa;
+  margin-top: 30px;
+}
